@@ -1,0 +1,289 @@
+---
+title: Производство кровельных гранул - Technonicol
+bodyClass: page-inner
+---
+extends includes/_app-prod
+
+block main
+
+
+	// Prod :: Start
+	article.prod
+		
+		.prod__head
+			.container-fluid
+
+				ul.prod__head-breadcrumbs
+					li
+						a(href="#").prod__head-breadcrumbs-link Главная
+					li
+						a(href="#").prod__head-breadcrumbs-link Производство кровельных гранул
+
+				ul.prod__head-social
+					li Поделиться:
+					li
+						a(href="#").prod__head-social-link
+							+sprite('icon-social-fb')
+					li
+						a(href="#").prod__head-social-link
+							+sprite('icon-social-vk')
+					li
+						a(href="#").prod__head-social-link
+							+sprite('icon-social-od')
+					li
+						a(href="#").prod__head-social-link
+							+sprite('icon-social-yt')
+					li
+						a(href="#").prod__head-social-link
+							+sprite('icon-social-im')
+
+				picture.prod__head-image
+					img(src="images/img-basalt-hero.jpg", alt="")
+
+				.prod__head-desc
+
+					h1.prod__head-title производство кровельных гранул
+
+					p.prod__head-text Кровельные гранулы применяются в качестве защитного и декоративного слоя кровельных материалов.
+
+
+
+		.prod__body
+			.container-fluid
+
+				blockquote.prod__blockquote
+					.prod__blockquote-desc
+						p Далеко не каждая горная порода может служить минеральной основой для кровельных гранул. Во-первых, она должна быть прочной, плотной и термостойкой; Во-вторых, не прозрачной для ультрафиолета; В-третьих, не содержать минералов, подверженных интенсивному окислению под действием климатических и технологических факторов; В-четвертых, способной при дроблении давать частички кубовидной формы. Наиболее полно таким требованиям отвечают некоторые разновидности базальтов и долеритов.
+						cite.prod__blockquote-cite
+							span.prod__blockquote-cite-author
+								| Александр Кочергин
+								small геолог
+							.prod__blockquote-cite-image
+								img(src="images/img-bazalt-blockquote.png", alt="")
+					picture.prod__blockquote-image
+						img(src="images/img-bazalt-blockquote.png", alt="")
+
+
+
+				.prod__scheme
+
+					picture.prod__scheme-image
+						img(src="images/img-bazalt-01.jpg", alt="")
+						figcaption Базальты и долериты — вулканические и субвулканические породы основного состава. Базальты и их производные формируются при вулканических излияниях в зонах раскола земной коры: океанического дна, островных вулканических дуг, континентальных рифтов (траппы).
+
+					h2.prod__scheme-title Этапы получения базальтовых гранул
+						
+					// 01 :: Start
+					.prod__scheme-item.prod__scheme-item--01
+
+						.prod__scheme-item-arrow
+							+sprite('icon-scheme-arrow')
+
+						
+
+						.row
+							.col-md-6.push-md-6
+								.prod__scheme-item-desc
+
+									.prod__scheme-item-icon
+										+sprite('icon-scheme-01')
+									h3 Поиск и подготовка месторождений
+									p Поиск и подготовка месторождений заключается в выявлении залежей полезного ископаемого, изучении их скважинами и горными выработками с использованием современных лабораторных методов.
+							.col-md-6.pull-md-6
+								picture.prod__scheme-item-image
+									img(src="images/img-scheme-01.png", alt="")
+
+					// 01 :: End
+
+
+					// 02 :: Start
+					.prod__scheme-item.prod__scheme-item--02
+
+						.row
+							.col-md-6
+								.prod__scheme-item-desc
+
+									.prod__scheme-item-icon
+										+sprite('icon-scheme-02')
+
+									h3 первичное дробление породы
+									p Первичное дробление производится непосредственно в карьере буро- взрывным способом. Для чего в породном массиве бурятся скважины, в скважины закладывается взрывчатка.
+									figure
+										img(src="images/img-scheme-02-desc.png", alt="")
+									p Далее идёт процесс получения целевой фракции, который состоит из 2-3 этапов дробления и сортировки с использованием специализированного оборудования. 
+							.col-md-6
+								picture.prod__scheme-item-image
+									img(src="images/img-scheme-02.png", alt="")
+
+					// 02 :: End
+
+
+					// 03 :: Start
+					.prod__scheme-item.prod__scheme-item--03
+
+						.prod__scheme-item-desc
+
+							.prod__scheme-item-icon
+								+sprite('icon-scheme-03')
+
+							h3 измельчение породы
+							p Взорванная порода отправляется в щёковую дробилку, где на выходе получается щебень, величиной 4-7 см.
+							figure
+								img(src="images/img-scheme-03-desc.png", alt="")
+
+					// 03 :: End
+
+					// 04 :: Start
+					.prod__scheme-item.prod__scheme-item--04
+						.prod__scheme-item-desc
+
+							.prod__scheme-item-icon
+								+sprite('icon-scheme-04')
+
+							h3 сортировка
+							p После дробилки камни идут в сортировку, где на фракции по размерам их разделяет аппарат «Грохот» (устройство, состоящее из нескольких сеток и ячейками разного размера, расположенные друг над другом). 
+							figure
+								img(src="images/img-scheme-04-desc.png", alt="")
+
+					// 04 :: End
+
+					// 05 :: Start
+					.prod__scheme-item.prod__scheme-item--05
+
+						.prod__scheme-item-desc
+
+							.prod__scheme-item-icon
+								+sprite('icon-scheme-05')
+
+							h3 получение целевой фракции
+							p Целевая фракция – это диапазон размеров частиц (обычно 0,6-2 мм), которые при нанесении на полотно кровельного материала обеспечат максимальную укрывистость (отсутствие просветов).
+							figure
+								img(src="images/img-scheme-05-desc.png", alt="")
+
+					// 05 :: End
+
+					// 06 :: Start
+					.prod__scheme-item.prod__scheme-item--06
+
+						.prod__scheme-item-desc
+
+							.prod__scheme-item-icon
+								+sprite('icon-scheme-06')
+
+							h3 повторное измельчение породы
+							p Если камни по прежнему велики, их отделяют и снова отправляют в дробилку. Так происходит до тех пор пока базальт не измельчат до размера целевой фракции, после чего он отправится на завод.
+
+							figure
+								img(src="images/img-scheme-06-desc.png", alt="")
+
+					// 06 :: End
+
+					// 07 :: Start
+					.prod__scheme-item.prod__scheme-item--07
+
+						.prod__scheme-item-icon
+							+sprite('icon-scheme-07')
+
+						.prod__scheme-item-desc
+							h3 нагрев
+							p Минеральные (неокрашенные) гранулы разогревают для более качественной и равномерной покраски гранул. 
+
+					// 07 :: End
+
+					// 08 :: Start
+					.prod__scheme-item.prod__scheme-item--08
+
+						.prod__scheme-item-icon
+							+sprite('icon-scheme-08')
+
+						.prod__scheme-item-desc
+							h3 покраска
+							p Разогретые гранулы загружаются во вращающийся миксер, где на них наносится краситель.
+							figure
+								img(src="images/img-scheme-08-desc.png", alt="")
+
+
+					// 08 :: End
+
+					// 09 :: Start
+					.prod__scheme-item.prod__scheme-item--09
+
+						.prod__scheme-item-icon
+							+sprite('icon-scheme-09')
+
+						.prod__scheme-item-desc
+							h3 обжиг
+							p Чтобы закрепить слой краски на гранулах — необходимо обжечь базальтовую крошку в специальной вращающейся печи.
+							p Под воздействием температуры (примерно 1000 °С) минеральный краситель <br>спекается, образуя прочную <br>керамическую <br> оболочку.
+							figure
+								img(src="images/img-scheme-09-desc.png", alt="")
+
+
+					// 09 :: End
+
+					// 10 :: Start
+					.prod__scheme-item.prod__scheme-item--10
+
+						.prod__scheme-item-icon
+							+sprite('icon-scheme-10')
+
+						.prod__scheme-item-desc
+							h3 нанесение полимера
+							p Поверх краски необходимо нанести тончайший слой полимерного вещества, по свойствам и структуре близкого к латексу. Полимер обеспечит лучшее скрепление с битумом и добавит базальту водоотталкивающих свойств.
+							figure
+								img(src="images/img-scheme-10-desc.png", alt="")
+
+
+					// 10 :: End
+
+					// 11 :: Start
+					.prod__scheme-item.prod__scheme-item--11
+
+						.prod__scheme-item-icon
+							+sprite('icon-scheme-11')
+
+						.prod__scheme-item-desc
+							h3 Охлаждение
+							p После печи, крошку охлаждают во вращающемся холодильнике
+							figure
+								img(src="images/img-scheme-11-desc.png", alt="")
+							h3 ограничений по цвету у материала не существует
+							p а это значит, что дизайнер может выбрать тот оттенок, который ему нужен и создать гибкую  черепицу любого цвета.
+
+
+					// 11 :: End
+
+	// Prod :: End
+
+
+	// Read :: Start
+	.read
+		.container-fluid
+
+			h2.read__heading ЧИТАЙТЕ ТАКЖЕ
+
+			.read__slides.js-slick-read
+
+				a(href="#").read__item
+					figure.read__item-image
+						img(src="images/img-read-01.jpg", alt="")
+					.read__item-desc
+						h3.read__item-title как производят стеклохолст?
+
+				a(href="#").read__item
+					figure.read__item-image
+						img(src="images/img-read-02.jpg", alt="")
+					.read__item-desc
+						h3.read__item-title как производят кровельный битум?
+
+				a(href="#").read__item
+					figure.read__item-image
+						img(src="images/img-read-03.jpg", alt="")
+					.read__item-desc
+						h3.read__item-title как производят гибкую черепицу?
+
+			.read__hashtag
+				a(href="#").read__hashtag-link кровельные гранулы
+				a(href="#").read__hashtag-link базальт
+
+	// Read :: End

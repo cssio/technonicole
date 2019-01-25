@@ -1,0 +1,35 @@
+// --------------------------------------------------------------------------
+// Prod
+// --------------------------------------------------------------------------
+
+.prod {
+
+}
+
+
+.prod__head {
+	position: relative;
+	background: #A0A0A1;
+	.container-fluid {
+		position: relative;
+	}
+}
+
+.prod__head-breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 20rem;
+	left: 0;
+}
+
+
+.prod__head-social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 20rem;
+	right: 0;
+}

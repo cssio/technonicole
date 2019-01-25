@@ -142,6 +142,11 @@
     -o-object-fit: cover;
     object-fit: cover; }
 
+.hero__item-desc {
+  position: relative;
+  -ms-transform: none;
+  transform: none; }
+
 .hero__item-title {
   display: block;
   font-size: 40rem;

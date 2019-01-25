@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 76.082901 60.1573944" style="enable-background:new 0 0 76.082901 60.1573944;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st2{clip-path:url(#SVGID_4_);fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0.0003929" width="76.0830002" height="60.1570015"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<line class="st0" x1="43.9868011" y1="31.1148949" x2="53.0998001" y2="4.704895"/>
+	<line class="st0" x1="29.0419006" y1="28.9869938" x2="24.0438995" y2="1.4999962"/>
+</g>
+<line class="st1" x1="18.2000999" y1="23.9356956" x2="12.2591" y2="15.4676971"/>
+<g>
+	<defs>
+		<rect id="SVGID_3_" y="0.0003929" width="76.0830002" height="60.1570015"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<line class="st2" x1="6.2494998" y1="31.1353951" x2="1.4994998" y2="27.7383957"/>
+	<line class="st2" x1="69.8335037" y1="29.8018951" x2="74.5835037" y2="26.4048958"/>
+	<path class="st2" d="M27.4619007,58.6573944l-8.75-10.25l9.5,1.75l-6.5-18.75l11.9999981,14.75l4-13.5l2.25,12.25l11.5-10.5
+		l-6.75,15.75l10-2l-10.25,10.5C44.4618988,58.6573944,27.0869007,58.2823944,27.4619007,58.6573944z"/>
+	<path class="st2" d="M52.4334984,54.6573944c1.2089996,0.4790001,2.5229988,0.75,3.9029999,0.75
+		c5.868,0,10.6249962-4.757,10.6249962-10.625c0-3.7259979-1.9209976-6.9980011-4.822998-8.8950005
+		c0.5289993-1.2630005,0.8230019-2.6489983,0.8230019-4.1049995c0-5.868-4.757-10.625-10.625-10.625
+		c-2.0470009,0-3.9519997,0.5890007-5.5740013,1.5919991c-0.9490013-4.8950005-5.2529984-8.5919991-10.4259987-8.5919991
+		c-3.8810005,0-7.2649994,2.0870018-9.1189995,5.1930008c-1.4630013-0.7579994-3.1200008-1.1930008-4.8810005-1.1930008
+		c-5.868,0-10.625,4.757-10.625,10.625c0,2.1359997,0.637001,4.1210022,1.7220001,5.7870026
+		c-4.4550018,1.2639999-7.7220001,5.3529968-7.7220001,10.2129974c0,5.868,4.757,10.625,10.625,10.625
+		c0.387001,0,0.769001-0.0209999,1.1459999-0.0610008c0.9700012-0.1040001,1.8990021-0.3419991,2.7729988-0.6889992"/>
+</g>
+</svg>

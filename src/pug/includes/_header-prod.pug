@@ -1,0 +1,61 @@
+//- --------------------------------------------------------------------------
+//- Header
+//- --------------------------------------------------------------------------
+
+.header__panel.header__panel--middle
+	.container-fluid
+
+		.header__logo
+			a(href="#")
+				img(src="images/logo.svg" alt="ТЕХНОНИКОЛЬ")
+
+		nav.header__social
+			a(href="#").header__social-link
+				+sprite('icon-social-fb')
+			a(href="#").header__social-link
+				+sprite('icon-social-vk')
+			a(href="#").header__social-link
+				+sprite('icon-social-od')
+			a(href="#").header__social-link
+				+sprite('icon-social-yt')
+			a(href="#").header__social-link
+				+sprite('icon-social-im')
+
+		.header__search
+			form(action="#")
+				button.header__search-btn
+					+sprite('icon-search')
+				.header__search-field
+					input(type="search" placeholder="Поиск").header__search-input
+
+
+.header__panel.header__panel--bottom
+	.container-fluid
+
+		nav.header__innernav
+
+			span.header__innernav-title всё о кровлях и фасадах
+
+			button.header__innernav-trigger
+				| Темы
+				span.header__innernav-trigger-icon
+
+			.header__innernav-content
+				ul.header__innernav-menu
+					li
+						a(href="#").header__innernav-link
+							| мастерство
+					li
+						a(href="#").header__innernav-link
+							| сделай сам
+					li
+						a(href="#").header__innernav-link
+							| реальные истории 
+					li
+						a(href="#").header__innernav-link
+							| полезные советы
+					li
+						a(href="#").header__innernav-link
+							| мы в соцсетях
+
+

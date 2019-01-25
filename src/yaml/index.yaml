@@ -21,4 +21,12 @@ PageList:
   ready: 100
 - file: styleguide.html
   ready: 100
+- file: prod-bazalt.html
+  ready: 80
+- file: prod-bitum.html
+  ready: 80
+- file: prod-glass.html
+  ready: 80
+- file: prod-tile.html
+  ready: 80
 

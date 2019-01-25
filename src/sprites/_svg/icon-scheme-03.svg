@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60.3332977 76.6390991" style="enable-background:new 0 0 60.3332977 76.6390991;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st1{clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st2{clip-path:url(#SVGID_4_);fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="15.8101997,26.1669006 11.7911997,14.4999008 26.8781986,9.3029022 32.0741997,24.3889008 
+	26.5001984,26.3829041 "/>
+<rect x="35.7311935" y="12.4221449" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -0.6501544 34.5335846)" class="st0" width="11.2589083" height="11.2589083"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0.0000992" width="60.3330002" height="76.6389999"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<rect x="30.7362041" y="2.8489523" transform="matrix(0.7071832 -0.7070304 0.7070304 0.7071832 5.6372271 25.8208485)" class="st1" width="6.5113926" height="6.5113926"/>
+</g>
+<rect x="20.5675182" y="57.4235153" transform="matrix(0.7071067 -0.7071069 0.7071069 0.7071067 -35.564743 33.7386322)" class="st0" width="4.7524648" height="4.7524648"/>
+<rect x="30.9302444" y="63.0901947" transform="matrix(0.7071067 -0.7071069 0.7071069 0.7071067 -36.5364418 42.7257423)" class="st0" width="4.75211" height="4.75211"/>
+<g>
+	<defs>
+		<rect id="SVGID_3_" y="0.0000992" width="60.3330002" height="76.6389999"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<rect x="25.0822563" y="71.4294586" transform="matrix(0.7071067 -0.7071068 0.7071068 0.7071067 -43.7982903 40.1935844)" class="st2" width="3.0730855" height="3.0730855"/>
+	<polyline class="st2" points="35.1666985,33.216198 1.4996986,33.216198 1.4996986,26.5491982 58.8336983,26.5491982 
+		58.8336983,33.216198 49.1666985,33.216198 	"/>
+</g>
+<polyline class="st0" points="52.9361992,34.216198 47.9361992,55.6861954 11.7301979,55.6861954 6.7301979,34.216198 "/>
+</svg>
