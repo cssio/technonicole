@@ -110,14 +110,16 @@
   background: #E1E1E1;
   padding: 15rem 20rem;
   margin: 0 10rem 10rem 0;
-  transition: 0.25s; }
+  transition: 0.25s;
+  text-decoration: none; }
   .read__hashtag-link:before {
     content: '#';
     color: #959595;
     margin: 0 5rem 0 0; }
   .read__hashtag-link:hover {
     background: #85002a;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   @media (max-width: 575px) {
     .read__hashtag-link {
       margin: 0 0 10rem;

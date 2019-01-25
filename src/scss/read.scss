@@ -140,6 +140,7 @@
 	padding: 15rem 20rem;
 	margin: 0 10rem 10rem 0;
 	transition: 0.25s;
+	text-decoration: none;
 	&:before {
 		content: '#';
 		color: #959595;
@@ -148,6 +149,7 @@
 	&:hover {
 		background: #85002a;
 		color: #fff;
+		text-decoration: none;
 	}
 
 	@include breakpointMax(sm) {

@@ -22,11 +22,11 @@ PageList:
 - file: styleguide.html
   ready: 100
 - file: prod-bazalt.html
-  ready: 80
+  ready: 100
 - file: prod-bitum.html
-  ready: 80
+  ready: 100
 - file: prod-glass.html
-  ready: 80
+  ready: 100
 - file: prod-tile.html
-  ready: 80
+  ready: 100
 

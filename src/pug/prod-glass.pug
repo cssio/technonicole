@@ -54,13 +54,16 @@ block main
 				blockquote.prod__blockquote
 					.prod__blockquote-desc
 						p «Основное преимущество стекловолокна, то, что этот материал не горит, то, что он не подается гниению».
-						cite
-							| Сергей Ракитский
-							small Директор производства стеклохолста
+						cite.prod__blockquote-cite
+							span.prod__blockquote-cite-author
+								| Сергей Ракитский
+								small Директор производства стеклохолста
+							.prod__blockquote-cite-image
+								img(src="images/img-glass-blockquote.png", alt="")
 					picture.prod__blockquote-image
 						img(src="images/img-glass-blockquote.png", alt="")
 
-				section.prod__section
+				section.prod__section.prod__section--txt
 					.row.align-items-center
 						.col-sm-6
 							picture.prod__section-image
@@ -76,9 +79,12 @@ block main
 								p Нетканый стеклохолст производится по мокрой или бумажной технологии из рубленого стекловолокна на технологической линии.
 
 
-				section.prod__section.prod__section--white
+				section.prod__section.prod__section--info.prod__section--white
 					.row.align-items-center
-						.col-sm-6
+						.col-sm-6.push-sm-6
+							picture.prod__section-image
+								img(src="images/img-glass-02.png", alt="")
+						.col-sm-6.pull-sm-6
 							.prod__section-desc
 								p Основной для будущего стеклохолста служит стекловолокно (стеклонить). В такой форме стекло демонстрирует необычные для себя свойства: не бьётся и не ломается, а вместо этого легко гнётся без разрушения. Это позволяет ткать из него стеклоткань. 
 
@@ -86,9 +92,7 @@ block main
 
 								p Производство стекловолокна основано на принципе экструзии: расплавленная стеклянная масса пропускается через фильеры, застывает и приобретает вид тончайших непрерывных нитей, имеющих толщину от одного микрона (ультратонкое) до 25 микрон (толстое).
 
-						.col-sm-6
-							picture.prod__section-image
-								img(src="images/img-glass-02.png", alt="")
+						
 
 
 				section.prod__section.prod__section--materials
@@ -99,6 +103,7 @@ block main
 					.row.align-items-center
 						.col-sm-6
 							picture.prod__section-image.prod__section-image--left
+								source(srcset="images/img-glass-03-320.png" media="(max-width: 576px)")
 								img(src="images/img-glass-03.png", alt="")
 						.col-sm-6
 							.prod__section-desc
@@ -113,6 +118,7 @@ block main
 
 
 								p Далее, все сырьевые компоненты будущего стекловолокна после предварительной подготовки (сушки и измельчения) в строго дозированных пропорциях смешивают в общую массу (стекольную шихту), которая поступает в специальную печь.
+
 				
 
 
@@ -147,14 +153,15 @@ block main
 	
 					.prod__section-content
 						.row
-							.col-sm-6
-								picture.prod__section-image.prod__section-image--left
-									img(src="images/img-fiberglass-03.png", alt="")
-							.col-sm-6
+							
+							.col-sm-6.push-sm-6
 								.prod__section-desc
 									mark 2
 									h3 Вытягивание стекломассы 
 									p Волокна вытягивают из расплавленной стекломассы через фильеры (тонкие форсунки с 200-4000 отверстий) при помощи механических устройств, наматывая волокно на бобину. Диаметр волокна зависит от скорости вытягивания и диаметра фильеры, но в среднем толщина нити составляет 9-14 микрон.
+							.col-sm-6.pull-sm-6
+								picture.prod__section-image.prod__section-image--left
+									img(src="images/img-fiberglass-03.png", alt="")
 
 
 				section.prod__section.prod__section--fiber-03
@@ -229,14 +236,15 @@ block main
 				section.prod__section.prod__section--glasswear-04
 					.prod__section-content
 						.row
-							.col-sm-6
-								picture.prod__section-image.prod__section-image--left
-									img(src="images/img-glass-08.png", alt="")
-							.col-sm-6
+							
+							.col-sm-6.push-sm-6
 								.prod__section-desc
 									mark 4
 									h3 Формирование стеклохолста 
 									p Главным насосом «белая вода» с диспергированным в ней стекловолокном подается в напорный ящик секции формера. Стекловолокно осаждается на сетке формера, технологическая вода удаляется из напорного ящика через систему из пяти обезвоживающих камер. Дополнительное обезвоживание полотна холста производится вакуумными отсосами.
+							.col-sm-6.pull-sm-6
+								picture.prod__section-image.prod__section-image--left
+									img(src="images/img-glass-08.png", alt="")
 
 
 				section.prod__section.prod__section--glasswear-05_06
@@ -262,9 +270,12 @@ block main
 				blockquote.prod__blockquote
 					.prod__blockquote-desc
 						p «Готовый холст выходит из сушилки и имеет высокую температуру около 200°С. Материал проходит натяжные волны, проходит систему контроля качества на потоке, проверяется поверхностная плотность материала, проверяется влажность материала, оптические сканеры проверяют качество поверхности с точки зрения дефектов промывания. Материал наматывается на готовые рулоны».
-						cite
-							| Сергей Ракитский
-							small Директор производства стеклохолста
+						cite.prod__blockquote-cite
+							span.prod__blockquote-cite-author
+								| Сергей Ракитский
+								small Директор производства стеклохолста
+							.prod__blockquote-cite-image
+								img(src="images/img-glass-blockquote.png", alt="")
 					picture.prod__blockquote-image
 						img(src="images/img-glass-blockquote.png", alt="")
 
@@ -289,14 +300,15 @@ block main
 				section.prod__section.prod__section--glasswear-08
 					.prod__section-content
 						.row
-							.col-sm-6
-								picture.prod__section-image
-									img(src="images/img-glass-13.png", alt="")
-							.col-sm-6
+							
+							.col-sm-6.push-sm-6
 								.prod__section-desc
 									mark 8
 									h3 упаковка
 									p Край холста закрепляется на рулоне скотчем, после чего рулоны поступают на упаковку. Готовое стекловолокно отправляют на производство гидроизоляционных и кровельных материалов (рулонная гидроизоляция, подкладочные ковры, гибкая черепица, др.).
+							.col-sm-6.pull-sm-6
+								picture.prod__section-image
+									img(src="images/img-glass-13.png", alt="")
 								
 								
 							
