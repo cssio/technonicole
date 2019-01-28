@@ -1213,7 +1213,9 @@
       .prod__section-tile--04 .prod__section-desc {
         margin: 0; }
         .prod__section-tile--04 .prod__section-desc mark {
-          float: none; } }
+          float: none; }
+    .prod__section--bitum-01 mark, .prod__section--bitum-02 mark, .prod__section--bitum-03 mark, .prod__section--bitum-04 mark, .prod__section--bitum-05_1 mark, .prod__section--bitum-05_2 mark {
+      float: none; } }
 
 .prod__section-title {
   display: block;

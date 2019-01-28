@@ -1315,6 +1315,7 @@
 			text-align: center;
 			z-index: 2;
 		}
+
 	}
 
 	&--bitum-02 {
@@ -1688,6 +1689,12 @@
  					float: none;
  				}
 			}
+ 		}
+
+ 		&--bitum-01, &--bitum-02, &--bitum-03, &--bitum-04, &--bitum-05_1, &--bitum-05_2 {
+ 			mark {
+ 				float: none;
+ 			}
  		}
 	}
 }
