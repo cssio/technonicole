@@ -1,0 +1,361 @@
+---
+title: Комфорт - Technonicol
+bodyClass: page-inner
+---
+extends includes/_app
+
+block main
+
+
+	// Comfort :: Start
+	article.comfort
+	
+		.comfort__head
+
+			.container-fluid
+
+				picture.comfort__head-image
+					//- source(srcset="images/img-m-hero-320.jpg" media="(max-width: 576px)")
+					img(src="images/img-comfort-hero.jpg", alt="")
+
+				picture.comfort__head-badge
+					img(src="images/img-comfort-badge.jpg", alt="")
+
+				.comfort__head-desc
+
+					h1.comfort__head-title
+						small серия
+						| Комфорт
+					
+					p.comfort__head-text однослойная черепица технониколь
+
+					a(href="#").btn.btn--50.btn--red скачать презентацию
+
+
+		.comfort__body
+			.container-fluid
+
+				.comfort__info
+					.row
+						.col-md-6.push-md-6
+
+							picture.comfort__info-collections
+								img(src="images/img-comfort-collections.png", alt="")
+								.row
+									.col-6
+										p Коллекция <b>Болеро</b>
+									.col-6
+										p Коллекция <b>Сальса</b>
+
+							.comfort__info-adv
+								.comfort__info-adv-item
+									figure.comfort__info-adv-image
+										img(src="images/img-comfort-adv-01.png", alt="")
+									p.comfort__info-adv-title однослойная
+								.comfort__info-adv-item
+									figure.comfort__info-adv-image
+										img(src="images/img-comfort-adv-02.png", alt="")
+									p.comfort__info-adv-title модифициро-ванный битум
+								.comfort__info-adv-item
+									figure.comfort__info-adv-image
+										img(src="images/img-comfort-adv-03.png", alt="")
+									p.comfort__info-adv-title гарантия производителя
+
+						.col-md-6.pull-md-6
+
+							.comfort__info-desc
+								p Эконом-серия однослойной гибкой черепицы с добавлением SBS-модификаторов, которые обеспечивают высокие свойства покрытия в разных климатических условиях. Нейминг коллекций продолжает тему танца: Болеро и Сальса.
+								p В основе нейминга цветов лежит идея красок природы, а прототипом палитры для новой серии стали цвета экзотических фруктов и почвогрунтов.
+								a(href="#").btn.btn--50.btn--red-empty задать вопрос
+
+						
+
+
+
+
+				.comfort__collection
+
+					h2.comfort__collection-title Коллекция БОЛЕРО
+
+					.comfort__collection-info
+						picture.comfort__collection-info-image
+							img(src="images/img-bolero-scheme.png", alt="")
+						p.comfort__collection-info-text Традиционная форма нарезки и спокойная природная палитра с эффектно проработанной тенью.
+
+
+					.comfort__collection-group
+
+						h3.comfort__collection-group-title Галька
+
+						picture.comfort__collection-group-aside
+							img(src="images/img-bolero-01-aside.png", alt="")
+
+						picture.comfort__collection-group-back
+							img(src="images/img-bolero-01-back.png", alt="")
+
+						picture.comfort__collection-group-front
+							img(src="images/img-bolero-01-front.png", alt="")
+
+						
+
+						.comfort__collection-group-control
+							a(href="#").btn.btn--buy купить онлайн
+							a(href="#").btn.btn--sales
+								| точки продаж
+								+sprite('icon-arrow-btn')
+
+
+
+					.comfort__collection-group
+
+						h3.comfort__collection-group-title песок
+						
+						picture.comfort__collection-group-aside
+							img(src="images/img-bolero-02-aside.png", alt="")
+
+						picture.comfort__collection-group-back
+							img(src="images/img-bolero-02-back.png", alt="")
+
+						picture.comfort__collection-group-front
+							img(src="images/img-bolero-02-front.png", alt="")
+
+
+						.comfort__collection-group-control
+							a(href="#").btn.btn--buy купить онлайн
+							a(href="#").btn.btn--sales
+								| точки продаж
+								+sprite('icon-arrow-btn')
+
+
+					.comfort__collection-group
+
+						h3.comfort__collection-group-title песок
+						
+						picture.comfort__collection-group-aside
+							img(src="images/img-bolero-03-aside.png", alt="")
+
+						picture.comfort__collection-group-back
+							img(src="images/img-bolero-03-back.png", alt="")
+
+						picture.comfort__collection-group-front
+							img(src="images/img-bolero-03-front.png", alt="")
+
+						
+
+						.comfort__collection-group-control
+							a(href="#").btn.btn--buy купить онлайн
+							a(href="#").btn.btn--sales
+								| точки продаж
+								+sprite('icon-arrow-btn')
+
+
+
+				.comfort__collection
+
+					h2.comfort__collection-title Коллекция САЛЬСА
+
+					.comfort__collection-info
+						picture.comfort__collection-info-image
+							img(src="images/img-salsa-scheme.png", alt="")
+						p.comfort__collection-info-text Сочная палитра экзотических плодов с хорошо заметной тенью.
+
+
+
+					.comfort__collection-group
+
+						h3.comfort__collection-group-title финик
+
+						picture.comfort__collection-group-aside
+							img(src="images/img-salsa-01-aside.png", alt="")
+
+						picture.comfort__collection-group-back
+							img(src="images/img-salsa-01-back.png", alt="")
+
+						picture.comfort__collection-group-front
+							img(src="images/img-salsa-01-front.png", alt="")
+
+
+						.comfort__collection-group-control
+							a(href="#").btn.btn--buy купить онлайн
+							a(href="#").btn.btn--sales
+								| точки продаж
+								+sprite('icon-arrow-btn')
+
+
+
+					.comfort__collection-group
+
+						h3.comfort__collection-group-title авокадо
+
+						picture.comfort__collection-group-aside
+							img(src="images/img-salsa-02-aside.png", alt="")
+
+						picture.comfort__collection-group-back
+							img(src="images/img-salsa-02-back.png", alt="")
+
+						picture.comfort__collection-group-front
+							img(src="images/img-salsa-02-front.png", alt="")
+
+
+						.comfort__collection-group-control
+							a(href="#").btn.btn--buy купить онлайн
+							a(href="#").btn.btn--sales
+								| точки продаж
+								+sprite('icon-arrow-btn')
+
+
+					.comfort__collection-group
+
+						h3.comfort__collection-group-title личи
+
+						picture.comfort__collection-group-aside
+							img(src="images/img-salsa-03-aside.png", alt="")
+
+						picture.comfort__collection-group-back
+							img(src="images/img-salsa-03-back.png", alt="")
+
+						picture.comfort__collection-group-front
+							img(src="images/img-salsa-03-front.png", alt="")
+
+						
+
+						.comfort__collection-group-control
+							a(href="#").btn.btn--buy купить онлайн
+							a(href="#").btn.btn--sales
+								| точки продаж
+								+sprite('icon-arrow-btn')
+		
+
+
+				.comfort__specifications
+
+					h2.comfort__specifications-title технические характеристики
+
+					.comfort__specifications-container
+
+						table.comfort__specifications-table
+							thead
+								tr
+									th
+									th
+										img(src="images/img-salsa-scheme.png", alt="")
+									th
+										img(src="images/img-bolero-scheme.png", alt="")
+								tr
+									th Параметры
+									th Сальса «Соната»
+									th Болеро «Аккорд»
+							tbody
+								tr
+									th Количество слоёв черепицы, шт
+									td 1
+									td 1
+								tr
+									th Ширина, мм
+									td 1000±3,0
+									td 1000±3,0
+								tr
+									th Высота, мм
+									td 317±3,0
+									td 317±3,0
+								tr
+									th Толщина, мм
+									td 2,8 ± 0,2
+									td 2,8 ± 0,2
+								tr
+									th Количество гонтов в упаковке, шт
+									td 22
+									td 22
+								tr
+									th Вес 1 м² кровельного покрытия. кг
+									td 8, 10
+									td 8, 10
+								tr
+									th Количество м² в упаковке, м²
+									td 3,00
+									td 3,00
+								tr
+									th Вес упаковки, кг
+									td 24,30
+									td 24,30
+								tr
+									th Основа, стеклохолст. г/м²
+									td 110
+									td 110
+								tr
+									th Теплостойкость, °С, не ниже
+									td 100
+									td 100
+								tr
+									th Потеря посыпки, г/образец, не более
+									td 1,2
+									td 1,2
+								tr
+									th Количество упаковок на поддоне, шт
+									td 42
+									td 42
+
+							tbody
+								tr
+									th Размер пачки (ширина x длина x высота), мм
+									td 320 x 1003 x 62
+									td 320 x 1003 x 62
+								tr
+									th Вес упаковки, кг
+									td 24,30
+									td 24,30
+								tr
+									th Количество упаковок на поддоне, шт
+									td 42
+									td 42
+								tr
+									th Размер поддона, мм
+									td 1050 x 1050
+									td 1050 x 1050
+								tr
+									th Вес поддона (брутто), кг
+									td 1046
+									td 1046
+
+
+
+	// Comfort :: End
+
+
+	// Request :: Start
+	.request
+		.container-fluid
+
+			h2.request__heading Остались вопросы?
+
+			.request__form
+				form(action="").js-validate
+
+					.row
+						.col-md-6
+							
+							.ui-field
+								input(type="text" name="firstname" placeholder="Имя").ui-input
+
+							.ui-field
+								input(type="email" name="email" placeholder="Электронная почта").ui-input
+
+							.ui-field
+								input(type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __").ui-input
+
+						.col-md-6
+
+							.ui-field
+								textarea(name="message" placeholder="Вопрос").ui-textarea
+
+					label.ui-check
+						input(type="checkbox" name="confirm").ui-check__input
+						span.ui-check__checkbox
+						| согласен с <a href="#">обработкой персональных данных</a>
+
+
+					button.btn.btn--50.btn--red  отправить
+
+					p.ui-caption Больше способов связи в разделе <a href="#">Обратная связь</a>
+
+	// Request :: End

@@ -1,0 +1,617 @@
+// --------------------------------------------------------------------------
+// Comfort
+// --------------------------------------------------------------------------
+
+@import 'base/_settings';
+@import 'base/_mixins';
+
+.icon-arrow-btn {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	width: 6rem;
+	height: 10rem;
+	margin: 0 0 0 5rem;
+}
+
+.btn--buy {
+	
+	border-color: #fff;
+	color: #fff;
+	&:hover {
+		border-color: #E50000;
+		background: #E50000;
+		color: #fff;
+	}
+	@include breakpointMax(sm) {
+		border-color: #e50000;
+		color: #e50000;
+	}
+}
+
+.btn--sales {
+	color: #fff;
+	&:hover {
+		color: #E50000;
+	}
+	@include breakpointMax(sm) {
+		color: #e50000;
+	}
+}
+
+
+.btn--buy, .btn--sales {
+	font-size: 14rem;
+	padding: 17rem 50rem;
+	border-width: 2rem;
+	@include breakpointMax(xl) {
+		padding: 17rem 30rem;
+	}
+
+	@include breakpointMax(md) {
+		
+	}
+	@include breakpointMax(sm) {
+		width: 100%;
+	}
+}
+
+// ------
+
+
+.comfort {
+	.container-fluid {
+		position: relative;
+		max-width: 1040rem;
+	}
+}
+
+
+.comfort__head {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+
+}
+
+.comfort__head-image {
+	background: #D9D9D9;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 100vw;
+	margin: 0 0 0 -50vw;
+	z-index: -1;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.comfort__head-badge {
+	position: absolute;
+	top: 0;
+	right: 20rem;
+	img {
+		display: block;
+	}
+	@include breakpointMax(md) {
+		max-width: 74rem;
+	}
+}
+
+.comfort__head-desc {
+	padding: 180rem 0 110rem;
+	.btn {
+		min-width: 250rem;
+	}
+
+	@include breakpointMax(md) {
+		padding: 160rem 0 96rem;
+	}
+
+	@include breakpointMax(sm) {
+		.btn {
+			width: 100%;
+		}
+	}
+}
+
+.comfort__head-title {
+	display: block;
+	font-size: 100rem;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 0 20rem;
+	small {
+		display: block;
+		font-size: 18rem;
+		line-height: 24rem;
+		font-weight: 600;
+		text-indent: 5rem;
+	}
+
+	@include breakpointMax(xl) {
+		font-size: 90rem;
+	}
+	@include breakpointMax(lg) {
+		font-size: 70rem;
+	}
+
+	@include breakpointMax(md) {
+		font-size: 50rem;
+		margin: 0 0 5rem;
+		small {
+			font-size: 16rem;
+			line-height: 1;
+			text-indent: 2rem;
+		}
+	}
+}
+
+.comfort__head-text {
+	display: block;
+	font-size: 24rem;
+	line-height: 28rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	max-width: 420rem;
+	margin: 0 0 60rem;
+
+	@include breakpointMax(md) {
+		font-size: 16rem;
+		line-height: 20rem;
+		margin: 0 0 30rem;
+	}
+}
+
+// ----
+
+
+.comfort__info {
+	padding: 60rem 0 70rem;
+	.row {
+		margin: 0 -40rem;
+		& > [class^="col-"]  {
+			padding: 0 40rem;
+		}
+	}
+
+	@include breakpointMax(xl) {
+		.row {
+			margin: 0 -15rem;
+			& > [class^="col-"]  {
+				padding: 0 15rem;
+			}
+		}
+	}
+
+	@include breakpointMax(md) {
+		padding: 30rem 0 70rem;
+	}
+}
+
+.comfort__info-desc {
+	font-size: 16rem;
+	line-height: 30rem;
+	font-weight: 300;
+	color: #555;
+	padding: 0 20rem 0 0;
+	p {
+		margin: 0 0 30rem;
+	}
+
+	.btn {
+		min-width: 248rem;
+		border-width: 2rem;
+		margin: 15rem 0 0;
+	}
+
+	@include breakpointMax(md) {
+		line-height: 24rem;
+		padding: 0;
+	}
+	@include breakpointMax(sm) {
+		.btn {
+			width: 100%;
+		}
+	}
+}
+
+.comfort__info-collections {
+	position: relative;
+	z-index: 10;
+	background: #fff;
+	box-shadow: 0 0 21px rgba(0, 0, 0, 0.23);
+	padding: 20rem;
+	display: block;
+	text-align: center;
+	margin: -140rem 0 42rem;
+	img {
+		display: block;
+		width: 100%;
+		margin: 0 0 15rem;
+	}
+	p {
+		margin: 0 0 -5rem;
+		font-size: 12rem;
+		line-height: 20rem;
+		font-weight: 400;
+	}
+	b {
+		font-size: 16rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.row {
+		margin: 0 -5rem;
+		& > [class^="col-"]  {
+			padding: 0 5rem;
+		}
+	}
+
+	@include breakpointMax(md) {
+		display: none;
+	}
+}
+
+
+.comfort__info-adv {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10rem;
+
+	@include breakpointMax(md) {
+		padding: 0;
+	}
+}
+
+.comfort__info-adv-item {
+	padding: 0 10rem 25rem;
+	width: 33.333%;
+}
+
+.comfort__info-adv-image {
+	display: block;
+	width: 98rem;
+	height: 98rem;
+	background: #85002A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 10rem;
+
+	@include breakpointMax(xl) {
+		width: 66rem;
+		height: 66rem;
+	}
+}
+
+.comfort__info-adv-title {
+	display: block;
+	margin: 0;
+	font-size: 14rem;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	color : #85002a;
+
+	@include breakpointMax(xl) {
+		font-size: 12rem;
+		line-height: 14rem;
+	}
+}
+
+// -----
+
+.comfort__collection {
+	margin: 0 0 140rem;
+	@include breakpointMax(md) {
+		margin: 0 0 100rem;
+	}
+	@include breakpointMax(sm) {
+		margin: 0 0 50rem;
+	}
+}
+
+.comfort__collection-title {
+	display: block;
+	font-size: 60rem;
+	line-height: 1;
+	font-weight: 600;
+	margin: 0 0 70rem;
+
+	@include breakpointMax(xl) {
+		font-size: 54rem;
+		margin: 0 0 60rem;
+	}
+
+	@include breakpointMax(lg) {
+		font-size: 44rem;
+		margin: 0 0 50rem;
+	}
+	
+	@include breakpointMax(md) {
+		font-size: 34rem;
+		margin: 0 0 40rem;
+	}
+
+	@include breakpointMax(sm) {
+		font-size: 24rem;
+		margin: 0 0 30rem;
+	}
+}
+
+.comfort__collection-info {
+	display: flex;
+	align-items: center;
+	margin: 0 0 70rem;
+	@include breakpointMax(sm) {
+		flex-wrap: wrap;
+		margin: 0 0 20rem;
+	}
+}
+
+.comfort__collection-info-image {
+	margin: 0 60rem 0 0;
+	@include breakpointMax(sm) {
+		margin: 0 0 30rem;
+		width: 100%;
+		order: 2;
+	}
+}
+
+.comfort__collection-info-text {
+	margin: 0;
+	font-size: 16rem;
+	line-height: 30rem;
+	font-weight: 300;
+	display: block;
+	max-width: 420rem;
+	@include breakpointMax(md) {
+		line-height: 24rem;
+	}
+	@include breakpointMax(sm) {
+		max-width: none;
+		order: 1;
+		margin: 0 0 30rem;
+	}
+}
+
+// -----
+
+.comfort__collection-group {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin: 0 0 80rem;
+	color: #fff;
+	
+
+	&:nth-of-type(odd) {
+		.comfort__collection-group-back {
+			order: 1;
+		}
+		.comfort__collection-group-aside {
+			order: 2;
+		}
+		.comfort__collection-group-front {
+			left: auto;
+			right: 14%;
+		}
+		.comfort__collection-group-title {
+			left: auto;
+			right: 0;
+		}
+		.comfort__collection-group-control {
+			right: auto;
+			left: 0;
+		}
+	}
+
+	@include breakpointMax(sm) {
+		margin: 0 0 40rem;
+	} 
+}
+
+
+
+.comfort__collection-group-back {
+	display: block;
+	width: 72%;
+	background: #D9D9D9;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	@include breakpointMax(sm) {
+		display: none;
+	}
+}
+
+.comfort__collection-group-aside {
+	display: block;
+	width: 28%;
+	overflow: hidden;
+	position: relative;
+	background: #D9D9D9;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	@include breakpointMax(sm) {
+		width: 100%;
+		max-height: 280rem;
+		&:before {
+			content: '';
+			float: left;
+			padding: 100% 0 0;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+.comfort__collection-group-front {
+	display: block;
+	position: absolute;
+	bottom: -50rem;
+	display: block;
+	width: 28%;
+	border: 5rem solid #fff;
+	box-shadow: 0 0 24rem rgba(0, 0, 0, 0.34);
+	left: 14%;
+	background: #D9D9D9;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	@include breakpointMax(md) {
+		display: none;
+	}
+}
+
+.comfort__collection-group-title {
+	display: block;
+	margin: 0;
+	width: 28%;
+	text-align: center;
+	font-size: 30rem;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 30rem 0;
+	z-index: 20;
+	@include breakpointMax(md) {
+		font-size: 24rem;
+	}
+	@include breakpointMax(sm) {
+		width: 100%;
+	}
+}
+
+.comfort__collection-group-control {
+	position: absolute;
+	bottom: 40rem;
+	right: 0;
+	width: 58%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@include breakpointMax(md) {
+		width: 72%;
+	}
+
+	@include breakpointMax(sm) {
+		order: 10;
+		padding: 40rem 0 0;
+		width: 100%;
+		position: relative;
+		bottom: 0;
+	}
+
+
+}
+
+// ------
+
+
+.comfort__specifications {
+
+}
+
+.comfort__specifications-title {
+	display: block;
+	font-size: 30rem;
+	line-height: 40rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 30rem;
+
+	@include breakpointMax(md) {
+		font-size: 24rem;
+		line-height: 28rem;
+		text-align: left;
+	}
+}
+
+.comfort__specifications-container {
+	@include breakpointMax(md) {
+		margin: 0 -20rem;
+	}
+}
+
+
+.comfort__specifications-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+	margin: 0 0 -20rem;
+	
+	font-size: 14rem;
+	line-height: 23rem;
+	font-weight: 400;
+
+	thead {
+		border-bottom: 30rem solid #fff;
+	}
+	tbody {
+		border-bottom: 40rem solid #fff;
+	}
+
+	th, td {
+		padding: 5rem 20rem;
+	}
+	th {
+		font-weight: 600;
+	}
+	
+	tbody tr:nth-child(odd) {
+		th, td {
+			background: #F3F3F4;
+		}
+	}
+
+	@include breakpointMax(md) {
+		line-height: 18rem;
+		thead {
+			border-bottom-width: 20rem;
+		}
+		thead tr:first-child {
+			display: none;
+		}
+		th, td {
+			padding: 5rem 10rem;
+			&:first-child {
+				padding-left: 20rem;
+			}
+			&:last-child {
+				padding-right: 20rem;
+			}
+		}
+	}
+}

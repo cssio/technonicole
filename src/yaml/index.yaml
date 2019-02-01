@@ -29,4 +29,6 @@ PageList:
   ready: 100
 - file: prod-tile.html
   ready: 100
+- file: comfort.html
+  ready: 100
 
