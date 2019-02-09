@@ -29,9 +29,9 @@ block main
 					li
 						a(href="#").prod__head-social-link
 							+sprite('icon-social-od')
-					li
-						a(href="#").prod__head-social-link
-							+sprite('icon-social-yt')
+					//- li
+					//- 	a(href="#").prod__head-social-link
+					//- 		+sprite('icon-social-yt')
 					li
 						a(href="#").prod__head-social-link
 							+sprite('icon-social-im')
@@ -138,7 +138,9 @@ block main
 									p Сущность процесса заключается в том, что содержащиеся в составе гудрона масла и смолы под воздействием кислорода воздуха превращаются в асфальтный остаток. Повышение температуры размягчения и вязкость битума, придают битуму твердость и прочность.
 							.col-sm-6
 								picture.prod__section-image.prod__section-image--right
-									img(src="images/img-bitum-06.png", alt="")
+									video(loop="true" autoplay="true")
+										source(src="images/video-oxidation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+									//- img(src="images/img-bitum-06.png", alt="")
 
 							.col-sm-12
 								p Следствием процесса насыщения кислородом будет приобретение продуктом важных для эксплуатации характеристик, к которым относится:

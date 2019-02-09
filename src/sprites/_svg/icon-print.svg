@@ -1,3 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
-  <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="29" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAMAAABhTZc9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVyEiIAAAAJ3RSTlMA4N2QsDt/8gWogZwd5c0BVkeUwhgTWqDwSGDAJDC6xPH0bPmyeLTkuuKLAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAALZJREFUKM/VkFkWgjAQBJt9B0VlEWSH3P+GRjC8GIYDWJ9TbzrpATgaO6JBoOmGii5ZEyrmP1vLdoi+jm1x53rsDM+Fz4IQFGHAfERxgsuV0kkcgaX8VzdyO2VgBnB/kNbY7AnCZodGmWTzQ5tctoUSWqi2fApKwlZ7akXY+iWoJdvwrLZTdvuWTxtuV3pg2NsMwLiNsWZNfHfOBTPgTOt8K/B5dykEy/ddAd13t6NyyPHHkpcE3mD1IjKJLgywAAAAAElFTkSuQmCC"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28.316 28.9400005" style="enable-background:new 0 0 28.316 28.9400005;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);fill:#010101;}
+</style>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="28.316" height="28.9400005"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;" class="st0" d="M6.0734,23.3596001h-5.323v-9.9449987c0-1.7680006,1.4319999-3.2009993,3.1989999-3.2009993h20.4169979
+			c1.7670002,0,3.1990013,1.4329987,3.1990013,3.2009993v9.9449987h-5.7180004"/>
+		<polyline style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;" class="st0" points="4.7922001,10.4113998 4.7922001,0.7504005 23.523201,0.7504005 23.523201,10.4113998 		"/>
+		<rect x="6.0080013" y="17.1809998" style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;" class="st0" width="16.2999992" height="11.0089998"/>
+		<path style="fill:currentColor;" class="st1" d="M5.6652002,13.3196001c0,0.4630003-0.375,0.8380003-0.8380003,0.8380003
+			c-0.4629998,0-0.8379998-0.375-0.8379998-0.8380003c0-0.4629984,0.375-0.8379984,0.8379998-0.8379984
+			C5.2902002,12.4816017,5.6652002,12.8566017,5.6652002,13.3196001"/>
+		<line style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;" class="st0" x1="19.2677994" y1="20.3694" x2="9.0477991" y2="20.3694"/>
+		<line style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;" class="st0" x1="19.2677994" y1="22.7346001" x2="9.0477991" y2="22.7346001"/>
+		<line style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-miterlimit:10;" class="st0" x1="19.2677994" y1="25.1007996" x2="9.0477991" y2="25.1007996"/>
+	</g>
+</g>
 </svg>

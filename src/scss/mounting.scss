@@ -1,0 +1,526 @@
+// --------------------------------------------------------------------------
+// Mounting
+// --------------------------------------------------------------------------
+
+@import 'base/_settings';
+@import 'base/_mixins';
+
+
+.mounting {
+	.container-fluid {
+		max-width: 1040rem;
+	}
+}
+
+.mounting__head {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.mounting__head-image {
+	background: #F4F4F6;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 100vw;
+	height: 100%;
+	margin: 0 0 0 -50vw;
+	z-index: -1;
+	overflow: hidden;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		max-width: none;
+		min-width: 100%;
+		min-height: 100%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+.mounting__head-desc {
+	padding: 260rem 0 120rem;
+	@include breakpointMax(sm) {
+		padding: 40rem 0 50rem;
+	}
+}
+
+.mounting__head-title {
+	display: block;
+	text-align: center;
+	font-size: 64rem;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 0 55rem;
+	small {
+		display: block;
+		font-size: 26rem;
+		padding: 15rem 0 0;
+	}
+
+	@include breakpointMax(xl) {
+		font-size: 54rem;
+		margin: 0 0 45rem;
+		small {
+			font-size: 16rem;
+			line-height: 20rem;
+		}
+	}
+
+	@include breakpointMax(lg) {
+		font-size: 44rem;
+	}
+	@include breakpointMax(md) {
+		font-size: 36rem;
+	}
+}
+
+
+.mounting__head-buttons {
+	.row {
+		margin: 0 -40rem -20rem;
+		justify-content: center;
+		& > [class^="col-"]  {
+			padding: 0 40rem 20rem;
+		}
+	}
+
+	.btn {
+		font-size: 14rem;
+		line-height: 40rem;
+		padding: 10rem 40rem;
+		min-width: 256rem;
+		display: block;
+		width: 100%;
+		[class^="icon-"] {
+			margin: 0 20rem 0 0;
+		}
+	}
+
+	@include breakpointMax(xl) {
+		.row {
+			margin: 0 -15rem -20rem;
+			& > [class^="col-"]  {
+				padding: 0 15rem 20rem;
+			}
+		}
+		.btn {
+			min-width: auto;
+		}
+	}
+}
+
+// ------
+
+.mounting__body {
+
+}
+
+.mounting__section {
+	position: relative;
+	z-index: 1;
+	padding: 70rem 0;
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		height: 100%;
+		z-index: -1;
+		width: 100vw;
+		margin: 0 0 0 -50vw;
+		background: #F7F7F7;
+	}
+	.row {
+		margin: 0 -40rem;
+		& > [class^="col-"]  {
+			padding: 0 40rem;
+		}
+	}
+
+	&:nth-of-type(even):after {
+		background: #fff;
+	}
+
+	font-size: 16rem;
+	line-height: 24rem;
+	font-weight: 300;
+	color: #000;
+
+	h2 {
+		font-size: 36rem;
+		line-height: 1.25;
+		font-weight: 400;
+		margin: 0 0 34rem;
+	}
+
+	h3 {
+		font-size: 24rem;
+		line-height: 28rem;
+		font-weight: 400;
+		margin: 0 0 24rem;
+	}
+
+	p {
+		margin: 0 0 24rem;
+	}
+	
+	strong {
+		font-weight: 600;
+	}
+
+	small {
+		font-size: 12rem;
+	}
+
+	sup {
+		color: #e30613;
+	}
+
+	ul {
+		margin: 0 0 24rem;
+		padding: 0;
+		list-style: none;
+		& > li {
+			position: relative;
+			padding: 0 0 0 20rem;
+			&:after {
+				content: '—';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	ol {
+		margin: 0 0 24rem;
+		padding: 0;
+		list-style: none;
+		counter-reset: point;
+	    & > li {
+	        position: relative;
+	        padding: 0 0 0 68rem;
+	        &:after {
+	            content: counter(point);
+	            counter-increment: point 1;
+	            position: absolute;
+	            top: -5rem;
+	            left: 0;
+	            width: 34rem;
+	            height: 34rem;
+	            background: #E30613;
+	            line-height: 34rem;
+	            font-weight: 300;
+	            text-align: center;
+	            color: #fff;
+	        }
+	    }
+	}
+
+	ol, ul {
+		figure {
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			img {
+				position: relative;
+				top: -20rem;
+				margin: 0 20rem 0 0;
+			}
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	mark {
+		display: inline-block;
+		vertical-align: top;
+		width: 48rem;
+		height: 48rem;
+		
+		font-size: 24rem;
+		line-height: 48rem;
+		font-weight: 400;
+		text-align: center;
+		background: #E30613;
+		color: #fff;
+	}
+
+	@include breakpointMax(xl) {
+
+		.row {
+			margin: 0 -15rem;
+			& > [class^="col-"]  {
+				padding: 0 15rem;
+			}
+		}
+		
+	}
+
+	@include breakpointMax(lg) {
+		padding: 50rem 0;
+		h2 {
+			font-size: 24rem;
+			margin: 0 0 20rem;
+		}
+
+		h3 {
+			font-size: 20rem;
+			margin: 0 0 20rem;
+		}
+
+		p {
+			margin: 0 0 20rem;
+		}
+
+		mark {
+			width: 36rem;
+			height: 36rem;
+			font-size: 19rem;
+			line-height: 36rem;
+		}
+	}
+
+	@include breakpointMax(sm) {
+		padding: 30rem 0;
+	}
+
+}
+
+.mounting__section-text {
+	position: relative;
+	top: -60rem;
+	background: #fff;
+	padding: 40rem 100rem;
+	margin: -70rem -100rem 10rem;
+	box-shadow: 0 0 49px rgba(0, 0, 0, 0.2);
+
+	font-size: 16rem;
+	line-height: 24rem;
+	font-weight: 300;
+	color: #707070;
+
+	p {
+		margin: 0 0 24rem;
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	@include breakpointMax(sm) {
+		top: -20rem;
+		margin: -20rem -20rem 20rem;
+		padding: 30rem 20rem;
+		box-shadow: none;
+	}
+}
+
+
+.mounting__section-important {
+	overflow: hidden;
+	margin: 0 0 40rem;
+	font-weight: 600;
+	max-width: 900rem;
+	b {
+		float: left;
+		margin: 0 10rem 0 0;
+	}
+	p {
+		display: block;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	@include breakpointMax(sm) {
+		b {
+			float: none;
+			margin: 0;
+			display: inline;
+		}
+		p {
+			display: inline;
+		}
+	}
+}
+
+.mounting__section-rules {
+
+	h3 {
+		margin: 0 0 40rem;
+	}
+
+	ol, ul {
+		margin: 0 0 70rem 50rem;
+		& > li {
+			margin: 0 0 24rem;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@include breakpointMax(lg) {
+		h3 {
+			margin: 0 0 30rem;
+		}
+		ol, ul {
+			margin: 0 0 24rem;
+		}
+	}
+
+}
+
+.mounting__section-video-obj {
+	background: #ccc;
+	overflow: hidden;
+	position: relative;
+	min-height: 180rem;
+	max-height: 564rem;
+	&:before {
+		content: '';
+		float: left;
+		padding: 58% 0 0;
+	}
+	img, iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.mounting__section-video {
+	text-align: center;
+	margin: 0;
+	padding: 30rem 0;
+
+
+	figcaption {
+		padding: 80rem 0 0;
+	}
+
+	.icon-video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		transform: translate(-50%,-50%);
+		cursor: pointer;
+		transition: 0.25s;
+		&:hover {
+			color: #E31E36;
+			transform: scale(1.1) translate(-50%,-50%);
+		}
+	}
+
+	
+	.btn {
+		min-width: 490rem;
+	}
+
+	@include breakpointMax(lg) {
+		figcaption {
+			padding: 40rem 20rem 0;
+		}
+		.btn {
+			min-width: auto;
+		}
+	}
+
+	@include breakpointMax(sm) {
+		padding: 40rem 0;
+		margin: 0 -20rem;
+	}
+}
+
+.mounting__section-group {
+	position: relative;
+	padding: 0 0 40rem 68rem;
+	min-height: 48rem;
+	mark {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	h3 {
+		padding: 10rem 0 0;
+	}
+
+	@include breakpointMax(lg) {
+		padding: 0;
+		min-height: 36rem;
+		mark {
+			position: relative;
+			float: left;
+			margin: 0 20rem 0 0;
+		}
+
+		h3 {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+			padding: 0;
+			min-height: 36rem;
+		}
+	}
+}
+
+.mounting__section-image {
+	margin: 0 0 60rem;
+	img {
+		display: block;
+		width: 100%;
+		max-width: none;
+		object-fit: cover;
+	}
+	figcaption {
+		display: block;
+		font-size: 13rem;
+		line-height: 15rem;
+		font-weight: 300;
+		color: #000;
+		font-style: normal;
+		padding: 20rem 0 0;
+		width: 100%;
+	}
+	&--left {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		img {
+			min-width: 50vw;
+		}
+	}
+	&--right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		img {
+			min-width: 50vw;
+		}
+	}
+	
+	@include breakpointMax(lg) {
+		margin: 0 0 40rem;
+	}
+
+	@include breakpointMax(sm) {
+		display: block;
+		margin: 0 -20rem 20rem;
+		width: auto;
+		figcaption {
+			padding: 20rem 20rem 0;
+		}
+	}
+}

@@ -684,7 +684,8 @@
 			margin: -50rem 0 0;
 
 			figure {
-				min-width: 60vw;
+				min-width: 692rem;
+				// min-width: 60vw;
 				margin: 0 0 0 -140rem;
 				img {
 					min-width: 100%;
@@ -1460,6 +1461,10 @@
 				img {
 					width: 100%;
 				}
+				video {
+					max-height: 500rem;
+					object-fit: cover;
+				}
 			}
 			
 		}
@@ -1696,6 +1701,10 @@
  				float: none;
  			}
  		}
+
+ 		&--bitum-05_1 .prod__section-image video {
+ 		 	width: 100%;
+ 		}
 	}
 }
 
@@ -1739,7 +1748,14 @@
 	img {
 		display: inline-block;
 		vertical-align: top;
+
 	}
+
+	video {
+		background: #ccc;
+	}
+
+
 	figcaption {
 		font-style: normal;
 	}
@@ -1759,7 +1775,7 @@
 	&--left {
 		float: right;
 		min-width: 50vw;
-		img {
+		img, video {
 			display: block;
 			width: 100%;
 			max-width: none;
@@ -1772,6 +1788,7 @@
 			width: 100%;
 			max-width: none;
 		}
+
 	}
 	&--circle {
 		transform: translate(0,-50%);

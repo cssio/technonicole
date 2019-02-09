@@ -532,7 +532,7 @@
       position: relative;
       margin: -50rem 0 0; }
       .prod__scheme-item--09 .prod__scheme-item-desc figure {
-        min-width: 60vw;
+        min-width: 692rem;
         margin: 0 0 0 -140rem; }
         .prod__scheme-item--09 .prod__scheme-item-desc figure img {
           min-width: 100%; }
@@ -1078,6 +1078,10 @@
         margin: 20rem -20rem; }
         .prod__section--bitum-05_1 .prod__section-image--right img {
           width: 100%; }
+        .prod__section--bitum-05_1 .prod__section-image--right video {
+          max-height: 500rem;
+          -o-object-fit: cover;
+          object-fit: cover; }
       .prod__section--bitum-05_2 .prod__section-image--left {
         padding: 0;
         margin: 20rem -20rem; }
@@ -1215,7 +1219,9 @@
         .prod__section-tile--04 .prod__section-desc mark {
           float: none; }
     .prod__section--bitum-01 mark, .prod__section--bitum-02 mark, .prod__section--bitum-03 mark, .prod__section--bitum-04 mark, .prod__section--bitum-05_1 mark, .prod__section--bitum-05_2 mark {
-      float: none; } }
+      float: none; }
+    .prod__section--bitum-05_1 .prod__section-image video {
+      width: 100%; } }
 
 .prod__section-title {
   display: block;
@@ -1252,6 +1258,8 @@
   .prod__section-image img {
     display: inline-block;
     vertical-align: top; }
+  .prod__section-image video {
+    background: #ccc; }
   .prod__section-image figcaption {
     font-style: normal; }
   .prod__section-image--top {
@@ -1267,7 +1275,7 @@
   .prod__section-image--left {
     float: right;
     min-width: 50vw; }
-    .prod__section-image--left img {
+    .prod__section-image--left img, .prod__section-image--left video {
       display: block;
       width: 100%;
       max-width: none; }

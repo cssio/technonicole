@@ -31,4 +31,6 @@ PageList:
   ready: 100
 - file: comfort.html
   ready: 100
+- file: mounting.html
+  ready: 100
 

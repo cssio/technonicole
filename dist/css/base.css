@@ -251,6 +251,15 @@
   height: 29rem;
   margin: 0 1rem; }
 
+.icon-print {
+  width: 29rem;
+  height: 29rem;
+  fill: none; }
+
+.icon-pdf {
+  width: 31rem;
+  height: 31rem; }
+
 .ui-legend {
   display: block;
   font-size: 24rem;
