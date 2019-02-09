@@ -417,6 +417,25 @@
 
 	@include breakpointMax(sm) {
 		margin: 0 0 40rem;
+
+
+		.comfort__collection-group-aside {
+			order: 1;
+		}
+		.comfort__collection-group-back {
+			order: 2;
+		}
+
+		&:nth-of-type(odd) {
+			.comfort__collection-group-aside {
+				order: 1;
+			}
+			.comfort__collection-group-back {
+				order: 2;
+			}
+		}
+		
+		
 	} 
 }
 
@@ -434,7 +453,8 @@
 	}
 
 	@include breakpointMax(sm) {
-		display: none;
+		display: block;
+		width: 100%;
 	}
 }
 

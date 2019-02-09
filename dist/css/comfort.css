@@ -334,7 +334,19 @@
     left: 0; }
   @media (max-width: 575px) {
     .comfort__collection-group {
-      margin: 0 0 40rem; } }
+      margin: 0 0 40rem; }
+      .comfort__collection-group .comfort__collection-group-aside {
+        -ms-flex-order: 1;
+        order: 1; }
+      .comfort__collection-group .comfort__collection-group-back {
+        -ms-flex-order: 2;
+        order: 2; }
+      .comfort__collection-group:nth-of-type(odd) .comfort__collection-group-aside {
+        -ms-flex-order: 1;
+        order: 1; }
+      .comfort__collection-group:nth-of-type(odd) .comfort__collection-group-back {
+        -ms-flex-order: 2;
+        order: 2; } }
 
 .comfort__collection-group-back {
   display: block;
@@ -348,7 +360,8 @@
     object-fit: cover; }
   @media (max-width: 575px) {
     .comfort__collection-group-back {
-      display: none; } }
+      display: block;
+      width: 100%; } }
 
 .comfort__collection-group-aside {
   display: block;
