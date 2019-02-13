@@ -221,6 +221,9 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 0 10rem; }
+  .comfort__info-adv-image img {
+    max-height: 100%;
+    max-width: 100%; }
   @media (max-width: 1199px) {
     .comfort__info-adv-image {
       width: 66rem;

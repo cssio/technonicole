@@ -287,6 +287,11 @@
 	justify-content: center;
 	margin: 0 0 10rem;
 
+	img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
 	@include breakpointMax(xl) {
 		width: 66rem;
 		height: 66rem;
