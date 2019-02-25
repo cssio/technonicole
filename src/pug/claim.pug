@@ -1,0 +1,224 @@
+---
+title: Оформить рекламацию - Technonicol
+bodyClass: page-claim
+---
+extends includes/_app
+
+block main
+
+	// Claim :: Start
+	section.claim
+
+		.claim__head
+
+			.container-fluid
+
+				picture.claim__head-image
+					source(srcset="images/img-claim-320.jpg" media="(max-width: 767px)")
+					img(src="images/img-claim.jpg", alt="")
+
+				h1.claim__head-title Оформить<br>рекламацию
+
+		.claim__body
+
+			.container-fluid
+
+				.claim__desc
+					p Если Вам нужно воспользоваться гарантией, свяжитесь с нами, и мы окажем Вам поддержку.<br>Для этого небходимо заполнить электронную форму:
+				
+				.claim__form
+					form(action="#")
+
+						fieldset.claim__form-fieldset
+
+							span.ui-legend Информация о Вас
+
+							.ui-group.ui-group--about
+
+								label.ui-label Я
+
+								label.ui-check
+									input(type="radio" name="about").ui-check__input
+									span.ui-check__radio
+									| Потребитель
+
+								label.ui-check
+									input(type="radio" name="about").ui-check__input
+									span.ui-check__radio
+									| Строитель
+
+								label.ui-check
+									input(type="radio" name="about").ui-check__input
+									span.ui-check__radio
+									| Продавец
+
+								label.ui-check
+									input(type="radio" name="about").ui-check__input
+									span.ui-check__radio
+									| Прямой торговый партнёр ТЕХНОНИКОЛЬ
+
+							.row
+								.col-md-6
+
+									input(type="email" placeholder="Электронная почта").ui-input
+
+									input(type="tel" placeholder="+7 ( ___ ) ___ - __ - __").ui-input
+
+
+						fieldset.claim__form-fieldset
+
+							span.ui-legend Информация о продукте
+
+							.row
+								.col-md-6
+
+									select.ui-select
+										option Группа продуктов
+										option Группа продуктов 1
+										option Группа продуктов 2
+										option Группа продуктов 3
+
+									select.ui-select
+										option Продукт
+										option Продукт 1
+										option Продукт 2
+										option Продукт 3
+
+									select.ui-select
+										option Цвет
+										option Цвет 1
+										option Цвет 2
+										option Цвет 3
+
+								.col-md-6
+
+									input(type="text" placeholder="Дата покупки").ui-input
+									input(type="text" placeholder="Наименование фирмы-продавца").ui-input
+									input(type="text" placeholder="Кол-во приобретённого материала (м², шт, погонный метр)").ui-input
+
+							.ui-group.ui-group--mounted
+
+								label.ui-label Материал смонтирован?
+
+								label.ui-check
+									input(type="radio" name="mounted").ui-check__input
+									span.ui-check__radio
+									| Да
+
+								label.ui-check
+									input(type="radio" name="mounted").ui-check__input
+									span.ui-check__radio
+									| Нет
+
+								label.ui-check
+									input(type="radio" name="mounted").ui-check__input
+									span.ui-check__radio
+									| В процессе
+
+
+							.ui-geo
+								input(type="hidden" placeholder="55.753215" js-set-lat)
+								input(type="hidden" placeholder="37.622504" js-set-long)
+								input(type="text" placeholder="Адрес объекта*" js-set-placemark js-map-suggestions).ui-input
+								.ui-map#geomap
+
+						fieldset.claim__form-fieldset
+
+							span.ui-legend Данные о владельце объекта
+
+							.row
+								.col-md-6
+
+									input(type="text" placeholder="ФИО").ui-input
+
+								.col-md-6
+
+									.row.row-gutter-10
+										.col-md-6
+											input(type="email" placeholder="Электронная почта").ui-input
+										.col-md-6
+											input(type="tel" placeholder="+7 ( ___ ) ___ - __ - __").ui-input
+
+						fieldset.claim__form-fieldset
+
+							span.ui-legend Данные о дефекте
+
+							.row
+								.col-md-6
+
+									textarea(placeholder="Претензия заключается в следующем").ui-textarea
+
+									textarea(placeholder="Требования заявителя").ui-textarea
+
+									input(type="text" placeholder="Кол-во материала, имеющего дефект (м², шт, погонный метр)").ui-input
+
+									input(type="text" placeholder="Оценочная сумма ущерба").ui-input
+
+								.col-md-6
+
+						
+									label.ui-file
+										input(type="file").ui-file__input
+										p.ui-file__text
+											+sprite('icon-file')
+											| Прикрепите документы на покупку, фотографии дефекта и гарантийный сертификат
+										.ui-file__upload
+											span.ui-file__desktop Перетащите файлы сюда
+											span.ui-file__mobile
+												+sprite('icon-file')
+												| Загрузить файл
+
+									.ui-docs
+										span.ui-docs__item
+											+sprite('icon-docs')
+											span.ui-docs__delete
+											| Technonikol_document.docx
+										span.ui-docs__item
+											+sprite('icon-docs')
+											span.ui-docs__delete
+											| Sertificate.pdf
+										span.ui-docs__item
+											+sprite('icon-docs')
+											span.ui-docs__delete
+											| Roof-1.jpg
+										span.ui-docs__item
+											+sprite('icon-docs')
+											span.ui-docs__delete
+											| Roof-2.jpg
+										span.ui-docs__item
+											+sprite('icon-docs')
+											span.ui-docs__delete
+											| Roof-3.jpg
+
+
+									a(href="#").btn.btn--36.btn--red-empty Получить гарантийный сертификат
+
+							
+							hr
+										
+							.ui-group.ui-group--method
+								label.ui-label Какой способ получения результатов Вы предпочитаете?
+
+								label.ui-check
+									input(type="radio" name="method").ui-check__input
+									span.ui-check__radio
+									| Личный кабинет
+
+								label.ui-check
+									input(type="radio" name="method").ui-check__input
+									span.ui-check__radio
+									| Электронная почта
+
+
+						
+							.claim__form-control
+								button.btn.btn--50.btn--red отправить претензию
+	
+
+	// Claim :: End
+
+
+
+
+
+	

@@ -33,4 +33,6 @@ PageList:
   ready: 100
 - file: mounting.html
   ready: 100
+- file: claim.html
+  ready: 100
 

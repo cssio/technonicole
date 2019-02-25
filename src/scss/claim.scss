@@ -1,0 +1,513 @@
+// --------------------------------------------------------------------------
+// Claim
+// --------------------------------------------------------------------------
+
+@import 'base/_settings';
+@import 'base/_mixins';
+
+
+.icon-file {
+	width: 27rem;
+	height: 27rem;
+}
+
+.icon-docs {
+	width: 13rem;
+	height: 17rem;
+}
+
+.ui-control {
+	text-align: center;
+}
+
+.ui-legend {
+	display: block;
+	font-size: 24rem;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0 0 20rem;
+	margin: 0 0 40rem;
+	width: 100%;
+	border-bottom: 1px solid #E30613;
+	@include breakpointMax(md) {
+		font-size: 18rem;
+	}
+}
+
+
+// -----
+
+.ui-file {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	margin: 0 0 30rem;
+	&:hover {
+		.ui-file__upload {
+			border-color: #000;
+			color: #000;
+		}
+	}
+}
+
+.ui-file__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.ui-file__text {
+	display: block;
+	position: relative;
+	font-size: 14rem;
+	line-height: 18rem;
+	font-weight: 400;
+	padding: 0 0 0 40rem;
+	margin: 0 0 10rem;
+	color: #000;
+
+	.icon-file {
+		position: absolute;
+		top: 50%;
+		left: -5rem;
+		transform: translate(0,-50%);
+		color: #E30613;
+	}
+
+	@include breakpointMax(md) {
+		padding: 0;
+		.icon-file {
+			visibility: hidden;
+		}
+	}
+}
+
+.ui-file__upload {
+	border: 1px dashed #b7b7b7;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 100rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 14rem;
+	line-height: 18rem;
+	font-weight: 400;
+	color: #959595;
+	transition: 0.25s;
+
+	padding: 0 20rem;
+
+	@include breakpointMax(md) {
+		height: 50rem;
+		justify-content: flex-start;
+	}
+}
+
+.ui-file__desktop {
+	display: block;
+	@include breakpointMax(md) {
+		display: none;
+	}
+}
+
+.ui-file__mobile {
+	display: none;
+	position: relative;
+	@include breakpointMax(md) {
+		display: block;
+		width: 100%;
+		&:after {
+			content: '';
+			display: block;
+			width: 36rem;
+			height: 36rem;
+			position: absolute;
+			top: 50%;
+			right: -14rem;
+			background: #E50000;
+			transform: translate(0,-50%);
+			z-index: 1;
+		}
+		.icon-file {
+			position: absolute;
+			top: 50%;
+			right: -7rem;
+			transform: translate(0,-50%);
+			z-index: 2;
+			color: #fff;
+			width: 20rem;
+			height: 20rem;
+		}
+	}
+}
+
+// -----
+
+
+.ui-docs {
+	margin: 0 0 30rem;
+}
+
+.ui-docs__item {
+	position: relative;
+	display: block;
+	padding: 0 0 0 22rem;
+	margin: 0 0 10rem;
+
+	font-size: 14rem;
+	line-height: 24rem;
+	color: #000000;
+	
+
+	.icon-docs {
+		position: absolute;
+		top: 4rem;
+		left: 0;
+		color: #E30613;
+
+		fill: #e30613;
+        fill-opacity: 0;
+        stroke: #e30613;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+
+	}
+
+	&:hover {
+		.ui-docs__delete {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.ui-docs__delete {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	cursor: pointer;
+	transition: 0.25s;
+	opacity: 0;
+	visibility: hidden;
+	width: 20rem;
+	height: 20rem;
+	&:after, &:before {
+		content: '';
+		display: block;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		width: 10rem;
+		height: 1rem;
+		background: #000;
+		margin: -1rem 0 0 -5rem;
+	}
+	&:after {
+		transform: rotate(45deg);
+	}
+	&:before {
+		transform: rotate(-45deg);
+	}
+	&:hover {
+		&:after, &:before {
+			background: #E30613;
+		}
+	}
+}
+
+// -----
+
+.ui-map {
+	position: relative;
+	width: 100%;
+	height: 300rem;
+	background: #ccc;
+	overflow: hidden;
+}
+
+
+.row-gutter-10 {
+	margin: 0 -5rem;
+	& > [class^="col-"]  {
+		padding: 0 5rem;
+	}
+}
+
+
+// -----
+
+
+.claim {
+	padding: 0 0 50rem;
+
+
+	.row:not(.row-gutter-10) {
+		margin: 0 -30rem;
+		& > [class^="col-"]  {
+			padding: 0 30rem;
+		}
+	}
+
+	@include breakpointMax(xl) {
+		.row:not(.row-gutter-10) {
+			margin: 0 -15rem;
+			& > [class^="col-"]  {
+				padding: 0 15rem;
+			}
+		}
+	}
+
+}
+
+.claim__head {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	padding: 82rem 0;
+	
+}
+
+.claim__head-image {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	width: 100vw;
+	margin: 0 0 0 -50vw;
+	z-index: -1;
+	background: #ccc;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.claim__head-title {
+	display: block;
+	font-size: 56rem;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+
+	@include breakpointMax(xl) {
+		font-size: 46rem;
+	}
+	@include breakpointMax(md) {
+		font-size: 36rem;
+		text-align: center;
+	}
+}
+
+
+// -----
+
+.claim__body {
+	.container-fluid {
+		max-width: 1040px;
+	}
+}
+
+
+.claim__desc {
+	position: relative;
+	z-index: 1;
+
+	font-size: 16rem;
+	line-height: 24rem;
+	font-weight: 300;
+	color: #000;
+
+	padding: 34rem 0;
+	margin: 0 0 55rem;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		bottom: 0;
+		width: 100vw;
+		background: #fff;
+		z-index: -1;
+		margin: 0 0 0 -50vw;
+	}
+
+	p {
+		margin: 0 0 24rem;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.claim__form {
+
+	hr {
+		border-color: #E30613;
+		margin: 30rem 0 40rem;
+	}
+	
+	.ui-group {
+		position: relative;
+		display: flex;
+		padding: 0 0 20rem;
+
+		.ui-label, .ui-check {
+			margin: 0 40rem 20rem 0;
+		}
+
+		&--about {
+			.ui-label {
+				font-size: 18rem;
+			}
+
+			@include breakpointMax(md) {
+				padding: 0 0 20rem 34rem;
+				flex-wrap: wrap;
+				.ui-label {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				.ui-check {
+					width: 100%;
+				}
+			}
+		}
+
+		&--mounted {
+			padding: 10rem 0;
+			.ui-label, .ui-check {
+				margin-right: 30rem;
+			}
+			@include breakpointMax(md) {
+				flex-wrap: wrap;
+				.ui-label {
+					width: 100%;
+				}
+			}
+		}
+
+		&--method {
+			padding: 0 0 40rem;
+			.ui-label, .ui-check {
+				margin-right: 30rem;
+			}
+			@include breakpointMax(md) {
+				flex-wrap: wrap;
+				.ui-label {
+					width: 100%;
+				}
+				.ui-check {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.ui-input {
+		margin: 0 0 20rem;
+	}
+
+	.ui-textarea {
+		height: 120rem;
+		min-height: 120rem;
+		margin: 0 0 20rem;
+	}
+
+	.ui-select {
+		margin: 0 0 20rem;
+
+		.jq-selectbox__select {
+			background: #FFFFFF;
+		    border: 1px solid #E1E1E1;
+		    font: 400 14rem/18rem $fontBase;
+		    padding: 15rem 20rem;
+		}
+
+		.jq-selectbox__trigger-arrow {
+			border-color: #E30613;
+			border-width: 2rem;
+			width: 8rem;
+			height: 8rem;
+			margin: -4rem 0 0 -4rem;
+		}
+	}
+
+	
+	
+	.ui-label, .ui-check {
+		font-size: 14rem;
+		line-height: 20rem;
+		font-weight: 400;
+		color: #000;
+	}
+
+
+	.ui-check__input:checked ~ .ui-check__radio {
+		border-width: 1px;
+		border-color: #C3C3C3;
+		&:after {
+			opacity: 1;
+		}
+	}
+	.ui-check__radio {
+		top: 0;
+		width: 20rem;
+		height: 20rem;
+		background: #fff;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			background: #E30613;
+			margin: -5rem 0 0 -5rem;
+			transition: 0.25s;
+			opacity: 0;
+		}
+	}
+
+	
+
+	.ui-geo {
+		.ui-input {
+			margin: 0;
+		}
+	}
+
+}
+
+
+
+.claim__form-fieldset {
+	border: none;
+	padding: 0;
+	margin: 0 0 50rem;
+	display: block;
+	width: 100%;
+}
+
+
+.claim__form-control {
+	text-align: center;
+	.btn {
+		width: 100%;
+	}
+	@include breakpoint(md) {
+		max-width: 354rem;
+	}
+}

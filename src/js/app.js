@@ -948,6 +948,149 @@ $(function() {
 
 
 
+
+	// Claim
+
+
+	// ------ Map
+
+
+	var _document = $(document);
+
+	function initMaps() {
+
+        if ($("#geomap").length > 0) {
+            ymaps.ready(init);
+        }
+
+        var myMap, dynamicPlacemark, hasPlacemark = false;
+
+        function init() {
+            myMap = new ymaps.Map("geomap", {
+                center: [55.753215, 37.622504],
+                zoom: 10
+            });
+
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('fullscreenControl');
+            myMap.controls.remove('rulerControl');
+            // myMap.controls.remove('geolocationControl');
+            myMap.controls.remove('routeEditor');
+            myMap.controls.remove('typeSelector');
+            // myMap.controls.remove('zoomControl');
+
+            // click
+            myMap.events.add('click', function (e) {
+
+                var coords = e.get('coords');
+
+                ymaps.geocode(coords).then(function (res) {
+                    // get name
+                    var newObj = res.geoObjects.get(0);
+                    var newObjName = newObj.properties.get('name');
+
+                    $('[js-set-placemark]').val(newObjName);
+                    $('[js-set-placemark]').keydown();
+                });
+
+            });
+
+
+            // suggestons
+            var suggestInput = $('[js-map-suggestions]').get(0);
+            var suggestView = new ymaps.SuggestView(suggestInput,{
+              // options
+              offset: [-1, 5]
+            });
+            // trigger update
+            suggestView.events.add('select', function (event) {
+              $('[js-set-placemark]').keydown();
+            });
+
+        }
+
+        // input lister
+        _document.
+            on('keydown', '[js-set-placemark]', debounce(function(e){
+                var currentVal = $(this).val();
+
+                // gecoder
+                ymaps.geocode(currentVal, { results: 1 }).then(function (res) {
+                    var geoObj = res.geoObjects.get(0),
+                        geoObjCoords = geoObj.geometry.getCoordinates();
+
+                    if ( geoObjCoords ){
+                        // attach or update position
+                        if ( !hasPlacemark ){
+                            // add placemark
+                            dynamicPlacemark = new ymaps.Placemark(geoObjCoords, {
+                                balloonContent: currentVal
+                            }, {
+                                draggable: true
+                            });
+                            myMap.geoObjects.add(dynamicPlacemark);
+                            hasPlacemark = true;
+                            attachReverseGeocode(); // because bindings for placemark is ready only at this point
+                        } else{
+                            dynamicPlacemark.geometry.setCoordinates(geoObjCoords);
+                        }
+                        // set center
+                        myMap.setCenter(geoObjCoords, 14);
+                        setLatLongInputs(geoObjCoords);
+                    }
+
+                }, function (err) {
+                    console.log(err);
+                });
+            }, 1000));
+
+        // search by lat, long
+        _document.
+          on('keydown', '[js-set-lat], [js-set-long]', debounce(function(e){
+              var latVal = $('[js-set-lat]').val();
+              var longVal = $('[js-set-long]').val();
+              function isLatitude(lat) {return lat.length > 3 && isFinite(lat) && Math.abs(lat) <= 90;}
+              function isLongitude(lng) {return lng.length > 3 && isFinite(lng) && Math.abs(lng) <= 180;}
+
+              if ( isLatitude(latVal) && isLongitude(longVal) ){
+                // geocode from pos
+                ymaps.geocode([latVal, longVal]).then(function (res) {
+                    var newObj = res.geoObjects.get(0);
+                    var newObjName = newObj.properties.get('name');
+
+                    $('[js-set-placemark]').val(newObjName);
+                    $('[js-set-placemark]').keydown();
+                });
+              }
+
+          }, 1000));
+
+        function attachReverseGeocode() {
+            // reverse geocoding
+            dynamicPlacemark.events.add("dragend", function (e) {
+                var newPos = dynamicPlacemark.geometry.getCoordinates();
+
+                ymaps.geocode(newPos).then(function (res) {
+                    // set name in input
+                    var newObj = res.geoObjects.get(0);
+                    var newObjName = newObj.properties.get('name');
+
+                    $('[js-set-placemark]').val(newObjName);
+                    setLatLongInputs(newPos);
+                    // myMap.setCenter(newPos, 14);
+                });
+            }, dynamicPlacemark);
+        }
+
+        function setLatLongInputs(data){
+          $('[js-set-lat]').val(data[0]);
+          $('[js-set-long]').val(data[1]);
+        }
+    }
+
+    initMaps();
+
 });
 
 

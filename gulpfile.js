@@ -353,7 +353,8 @@ gulp.task('js:plugins', function() {
 		path.resolve('node_modules', 'easy-autocomplete/dist/jquery.easy-autocomplete.js'),
 		path.resolve('node_modules', 'isotope-layout/dist/isotope.pkgd.js'),
 		path.resolve('node_modules', 'jquery-match-height/jquery.matchHeight.js'),
-		path.resolve('src/js/plugins', 'jquery.formstyler.js')
+		path.resolve('src/js/plugins', 'jquery.formstyler.js'),
+		path.resolve('src/js/plugins', 'debounce.js')
     ])
     .pipe(plumber({
 		errorHandler: errorHandler
