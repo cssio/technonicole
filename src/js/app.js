@@ -971,6 +971,8 @@ $(function() {
                 zoom: 10
             });
 
+            myMap.behaviors.disable('scrollZoom'); 
+
             myMap.controls.remove('trafficControl');
             myMap.controls.remove('searchControl');
             myMap.controls.remove('fullscreenControl');
@@ -1027,7 +1029,9 @@ $(function() {
                             dynamicPlacemark = new ymaps.Placemark(geoObjCoords, {
                                 balloonContent: currentVal
                             }, {
-                                draggable: true
+                                draggable: true,
+                                preset: 'islands#icon',
+                                iconColor: '#E30613'
                             });
                             myMap.geoObjects.add(dynamicPlacemark);
                             hasPlacemark = true;

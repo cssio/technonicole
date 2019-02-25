@@ -9,9 +9,6 @@
   width: 13rem;
   height: 17rem; }
 
-.ui-control {
-  text-align: center; }
-
 .ui-legend {
   display: block;
   font-size: 24rem;
@@ -177,6 +174,15 @@
   .ui-docs__delete:hover:after, .ui-docs__delete:hover:before {
     background: #E30613; }
 
+@media (max-width: 767px) {
+  .ui-certificate .btn {
+    width: 100%;
+    text-decoration: none; }
+  .ui-certificate .btn--red-empty:hover {
+    text-decoration: none;
+    background: #E30613;
+    color: #fff; } }
+
 .ui-map {
   position: relative;
   width: 100%;
@@ -200,6 +206,9 @@
       margin: 0 -15rem; }
       .claim .row:not(.row-gutter-10) > [class^="col-"] {
         padding: 0 15rem; } }
+  @media (max-width: 767px) {
+    .claim {
+      padding: 0 0 10rem; } }
 
 .claim__head {
   position: relative;
@@ -265,10 +274,17 @@
     margin: 0 0 24rem; }
     .claim__desc p:last-child {
       margin: 0; }
+  @media (max-width: 767px) {
+    .claim__desc {
+      margin: 0 0 40rem; } }
 
 .claim__form hr {
   border-color: #E30613;
   margin: 30rem 0 40rem; }
+
+@media (max-width: 767px) {
+  .claim__form hr {
+    margin: 60rem 0 20rem; } }
 
 .claim__form .ui-group {
   position: relative;
@@ -307,7 +323,8 @@
     @media (max-width: 767px) {
       .claim__form .ui-group--method {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        padding: 0 0 20rem; }
         .claim__form .ui-group--method .ui-label {
           width: 100%; }
         .claim__form .ui-group--method .ui-check {
@@ -320,6 +337,13 @@
   height: 120rem;
   min-height: 120rem;
   margin: 0 0 20rem; }
+  .claim__form .ui-textarea--input {
+    height: 70rem;
+    min-height: 70rem; }
+    @media (min-width: 768px) {
+      .claim__form .ui-textarea--input {
+        height: 50rem;
+        min-height: 50rem; } }
 
 .claim__form .ui-select {
   margin: 0 0 20rem; }
@@ -366,8 +390,16 @@
     transition: 0.25s;
     opacity: 0; }
 
-.claim__form .ui-geo .ui-input {
+.claim__form .ui-geo .ui-input, .claim__form .ui-geo .ui-textarea {
   margin: 0; }
+
+.claim__form .ui-geo .ui-textarea {
+  height: 50rem;
+  min-height: 50rem; }
+  @media (max-width: 767px) {
+    .claim__form .ui-geo .ui-textarea {
+      min-height: 100rem;
+      height: 100rem; } }
 
 .claim__form-fieldset {
   border: none;
@@ -375,11 +407,14 @@
   margin: 0 0 50rem;
   display: block;
   width: 100%; }
+  @media (max-width: 767px) {
+    .claim__form-fieldset {
+      margin: 0 0 40rem; } }
 
 .claim__form-control {
   text-align: center; }
   .claim__form-control .btn {
     width: 100%; }
   @media (min-width: 768px) {
-    .claim__form-control {
+    .claim__form-control .btn {
       max-width: 354rem; } }

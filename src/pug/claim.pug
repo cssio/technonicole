@@ -94,7 +94,7 @@ block main
 
 									input(type="text" placeholder="Дата покупки").ui-input
 									input(type="text" placeholder="Наименование фирмы-продавца").ui-input
-									input(type="text" placeholder="Кол-во приобретённого материала (м², шт, погонный метр)").ui-input
+									textarea(placeholder="Количество материала с дефектом (м², шт, погонный метр)").ui-textarea.ui-textarea--input
 
 							.ui-group.ui-group--mounted
 
@@ -119,7 +119,7 @@ block main
 							.ui-geo
 								input(type="hidden" placeholder="55.753215" js-set-lat)
 								input(type="hidden" placeholder="37.622504" js-set-long)
-								input(type="text" placeholder="Адрес объекта*" js-set-placemark js-map-suggestions).ui-input
+								textarea(placeholder="Адрес объекта*" js-set-placemark js-map-suggestions).ui-textarea
 								.ui-map#geomap
 
 						fieldset.claim__form-fieldset
@@ -149,9 +149,9 @@ block main
 									textarea(placeholder="Претензия заключается в следующем").ui-textarea
 
 									textarea(placeholder="Требования заявителя").ui-textarea
-
-									input(type="text" placeholder="Кол-во материала, имеющего дефект (м², шт, погонный метр)").ui-input
-
+									
+									textarea(placeholder="Кол-во материала, имеющего дефект (м², шт, погонный метр)").ui-textarea.ui-textarea--input
+									
 									input(type="text" placeholder="Оценочная сумма ущерба").ui-input
 
 								.col-md-6
@@ -190,8 +190,8 @@ block main
 											span.ui-docs__delete
 											| Roof-3.jpg
 
-
-									a(href="#").btn.btn--36.btn--red-empty Получить гарантийный сертификат
+									.ui-certificate
+										a(href="#").btn.btn--36.btn--red-empty Получить гарантийный сертификат
 
 							
 							hr

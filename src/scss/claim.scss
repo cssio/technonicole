@@ -16,9 +16,7 @@
 	height: 17rem;
 }
 
-.ui-control {
-	text-align: center;
-}
+
 
 .ui-legend {
 	display: block;
@@ -220,6 +218,22 @@
 	}
 }
 
+.ui-certificate {
+	@include breakpointMax(md) {
+		.btn {
+			width: 100%;
+			text-decoration: none;
+		}
+		.btn--red-empty {
+			&:hover {
+				text-decoration: none;
+				background: #E30613;
+				color: #fff;
+			}
+		}
+	}
+}
+
 // -----
 
 .ui-map {
@@ -260,6 +274,10 @@
 				padding: 0 15rem;
 			}
 		}
+	}
+
+	@include breakpointMax(md) {
+		padding: 0 0 10rem;
 	}
 
 }
@@ -347,6 +365,10 @@
 			margin: 0;
 		}
 	}
+
+	@include breakpointMax(md) {
+		margin: 0 0 40rem;
+	}
 }
 
 .claim__form {
@@ -354,6 +376,12 @@
 	hr {
 		border-color: #E30613;
 		margin: 30rem 0 40rem;
+	}
+
+	@include breakpointMax(md) {
+		hr {
+			margin: 60rem 0 20rem;
+		}
 	}
 	
 	.ui-group {
@@ -404,6 +432,7 @@
 			}
 			@include breakpointMax(md) {
 				flex-wrap: wrap;
+				padding: 0 0 20rem;
 				.ui-label {
 					width: 100%;
 				}
@@ -422,6 +451,15 @@
 		height: 120rem;
 		min-height: 120rem;
 		margin: 0 0 20rem;
+
+		&--input {
+			height: 70rem;
+			min-height: 70rem;
+			@include breakpoint(md) {
+				height: 50rem;
+				min-height: 50rem;
+			}
+		}
 	}
 
 	.ui-select {
@@ -484,8 +522,18 @@
 	
 
 	.ui-geo {
-		.ui-input {
+		.ui-input, .ui-textarea {
 			margin: 0;
+		}
+
+		.ui-textarea {
+			height: 50rem;
+			min-height: 50rem;
+			@include breakpointMax(md) {
+				min-height: 100rem;
+				height: 100rem;
+			}
+			
 		}
 	}
 
@@ -499,6 +547,9 @@
 	margin: 0 0 50rem;
 	display: block;
 	width: 100%;
+	@include breakpointMax(md) {
+		margin: 0 0 40rem;
+	}
 }
 
 
@@ -508,6 +559,8 @@
 		width: 100%;
 	}
 	@include breakpoint(md) {
-		max-width: 354rem;
+		.btn {
+			max-width: 354rem;
+		}
 	}
 }
