@@ -219,17 +219,17 @@
 }
 
 .ui-certificate {
+	.btn--red-empty {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+			background: #E30613;
+			color: #fff;
+		}
+	}
 	@include breakpointMax(md) {
 		.btn {
 			width: 100%;
-			text-decoration: none;
-		}
-		.btn--red-empty {
-			&:hover {
-				text-decoration: none;
-				background: #E30613;
-				color: #fff;
-			}
 		}
 	}
 }

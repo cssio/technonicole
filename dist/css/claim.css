@@ -174,14 +174,16 @@
   .ui-docs__delete:hover:after, .ui-docs__delete:hover:before {
     background: #E30613; }
 
-@media (max-width: 767px) {
-  .ui-certificate .btn {
-    width: 100%;
-    text-decoration: none; }
+.ui-certificate .btn--red-empty {
+  text-decoration: none; }
   .ui-certificate .btn--red-empty:hover {
     text-decoration: none;
     background: #E30613;
-    color: #fff; } }
+    color: #fff; }
+
+@media (max-width: 767px) {
+  .ui-certificate .btn {
+    width: 100%; } }
 
 .ui-map {
   position: relative;
